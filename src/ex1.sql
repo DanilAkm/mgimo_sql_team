@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS account_tarif (
     id SERIAL PRIMARY KEY,
     account_id integer,
     tarif_id integer,
-    tarif_is_active bool default false not null,
+    tarif_is_active bool default false,
     tarif_creation_date timestamp not null ,
     next_payment timestamp not null,
     actual_payment float not null,
